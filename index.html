@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-Solar | Operational Dashboard</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for Premium Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="logo">
+                <img src="public/logo.png" alt="r-solar logo" class="logo-img">
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="dashboard-grid">
+                <!-- Portal Cards -->
+                <div class="cards-column">
+                    <div class="portal-card">
+                        <div class="card-icon crm-icon">
+                            <i class='bx bx-group'></i>
+                        </div>
+                        <h2 class="card-title">CRM Portal</h2>
+                        <p class="card-desc">Manage leads, customer relations, and sales pipelines.</p>
+                        <a href="https://crm.myrsolar.com/" class="launch-link">Launch Platform <i
+                                class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+
+                    <div class="portal-card">
+                        <div class="card-icon mission-icon">
+                            <i class='bx bx-bar-chart-alt-2'></i>
+                        </div>
+                        <h2 class="card-title">Mission Control</h2>
+                        <p class="card-desc">Project monitoring, installation status etc.</p>
+                        <a href="https://missioncontrol.myrsolar.com/" class="launch-link">Launch Platform <i
+                                class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+
+                    <div class="portal-card">
+                        <div class="card-icon admin-icon">
+                            <i class='bx bx-cog'></i>
+                        </div>
+                        <h2 class="card-title">Admin Panel</h2>
+                        <p class="card-desc">User management, permissions, and system configurations.</p>
+                        <a href="https://admin.myrsolar.com/" class="launch-link">Launch Platform <i
+                                class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+
+                    <div class="portal-card">
+                        <div class="card-icon site-icon">
+                            <i class='bx bx-globe'></i>
+                        </div>
+                        <h2 class="card-title">Rsolar Website</h2>
+                        <p class="card-desc">Public-facing website and marketing materials.</p>
+                        <a href="https://myrsolar.com/" target="_blank" class="launch-link link-yellow">Visit Site <i
+                                class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+
+                <!-- Connect Card -->
+                <div class="connect-column">
+                    <div class="connect-card">
+                        <h2 class="connect-title">Rsolar Connect</h2>
+                        <span class="mobile-exp-tag">MOBILE EXPERIENCE</span>
+                        <div class="qr-mockup-container">
+                            <img src="public/rsolar-connect.jpg" alt="Rsolar Connect" class="qr-mockup-img">
+                        </div>
+                        <p class="connect-desc">Scan to download the app for real-time field reporting.</p>
+                        <div class="download-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.rsolar.app" target="_blank"
+                                class="btn-small">Download for Android</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
