@@ -125,24 +125,30 @@ body {
     color: var(--accent-blue);
 }
 
+.portal-icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 .crm-icon {
-    background: hsla(210, 100%, 60%, 0.2);
-    color: var(--accent-blue);
+    background: hsla(88, 50%, 51%, 0.1);
+    color: #72BF44;
 }
 
 .mission-icon {
-    background: hsla(260, 100%, 70%, 0.2);
-    color: hsl(260, 100%, 70%);
+    background: hsla(88, 50%, 51%, 0.1);
+    color: #72BF44;
 }
 
 .admin-icon {
-    background: hsla(0, 100%, 70%, 0.2);
-    color: hsl(0, 100%, 70%);
+    background: hsla(88, 50%, 51%, 0.1);
+    color: #72BF44;
 }
 
 .site-icon {
-    background: hsla(142, 71%, 45%, 0.2);
-    color: var(--accent-green);
+    background: hsla(88, 50%, 51%, 0.1);
+    color: #72BF44;
 }
 
 .card-title {
