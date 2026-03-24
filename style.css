@@ -104,6 +104,7 @@ body {
     flex-direction: column;
     gap: 16px;
     height: 280px;
+    position: relative;
 }
 
 .portal-card:hover {
@@ -173,6 +174,13 @@ body {
     transition: var(--transition);
 }
 
+.launch-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
 .launch-link i {
     font-size: 1.2rem;
 }
@@ -193,6 +201,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
 
 .connect-title {
@@ -210,17 +219,18 @@ body {
 .qr-mockup-container {
     width: 100%;
     max-width: 200px;
-    aspect-ratio: 9/12;
-    background: #1e293b;
+    aspect-ratio: 1/1;
+    background: #ffffff;
     border-radius: var(--radius-md);
     overflow: hidden;
     border: 8px solid #334155;
+    padding: 16px;
 }
 
 .qr-mockup-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .connect-desc {
@@ -245,6 +255,13 @@ body {
     transition: var(--transition);
     text-decoration: none;
     display: inline-block;
+}
+
+.btn-small::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
 
 .btn-small:hover {
@@ -355,5 +372,73 @@ body {
     .portal-card {
         height: auto;
         padding: 24px;
+    }
+}
+
+/* Support Footer */
+.support-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-card);
+}
+
+.support-contact {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.support-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.support-item i {
+    font-size: 2rem;
+    color: var(--accent-yellow);
+    background: hsla(88, 50%, 51%, 0.1);
+    padding: 12px;
+    border-radius: var(--radius-sm);
+}
+
+.support-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.support-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.support-number {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.support-number:hover {
+    color: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+    .support-contact {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .support-text {
+        align-items: center;
+        text-align: center;
     }
 }
